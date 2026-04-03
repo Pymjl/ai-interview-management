@@ -1,18 +1,15 @@
-# ============================================
-# Python / uv 项目
-# ============================================
-
-# Python 字节码
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 build/
-develop-eggs/
 dist/
 downloads/
 eggs/
+*.egg-info/
+*.egg
 .eggs/
 lib/
 lib64/
@@ -20,194 +17,110 @@ parts/
 sdist/
 var/
 wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+develop-eggs/
+.installer.cfg
 
 # 虚拟环境
 .venv/
 venv/
 ENV/
 env/
-.env
 
-# uv
+# 依赖锁文件
 uv.lock
-.lock
-*.toml.tmp
-
-# Poetry
 poetry.lock
+.lock
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage
-htmlcov/
+# 测试 / 覆盖率
 .tox/
 .nox/
 .coverage
 .coverage.*
 .cache
+htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
 .hypothesis/
 .pytest_cache/
 test-results/
 playwright-report/
 
-# Translations
-*.mo
-*.pot
-
-# Django
+# Django / Flask
 *.log
-local_settings.py
 db.sqlite3
-
-# Flask
 instance/
 .webassets-cache
 
-# Scrapy
-.scrapy
-
-# Sphinx
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
+# Jupyter
 .ipynb_checkpoints
-
-# IPython
 profile_default/
 ipython_config.py
 
-# pyenv
-.python-version
-
-# celery
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath
-*.sage.py
-
-# Environments
+# 环境变量
 .env
 .env.local
 .env.*.local
-.envrc
-*.env.bak
 
-# ============================================
-# IDE / Editor
-# ============================================
-
-# JetBrains
+# IDE
 .idea/
-*.iml
-*.iws
-*.ipr
-.idea_modules/
-atlassian-ide-plugin.xml
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-# VS Code
 .vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
-# Eclipse / PyCharm
-. settings/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+.settings/
 .project
 .classpath
-.settings/
-.credentials
-.usage.df
-
-# Visual Studio
 .vs/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 *.userprefs
-.vscode/
 
-# ============================================
-# 前端 (Frontend)
-# ============================================
-
+# 前端
 frontend/node_modules/
 frontend/.pnp/
 frontend/.pnp.js
 frontend/yarn.lock
 frontend/package-lock.json
 frontend/pnpm-lock.yaml
-
 frontend/dist/
 frontend/dist-ssr/
 frontend/build/
-
-# Logs
 frontend/logs/
-frontend/*.log
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/pnpm-debug.log*
-
-# Local env files
 frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
-
 frontend/*.local
 frontend/.vite/
 frontend/playwright-report/
 frontend/test-results/
 
-# ============================================
 # 数据库 / 迁移
-# ============================================
-
 *.db
 *.sqlite
 *.sqlite3
 db_data/
-*.log
-
 alembic.ini
 alembic/
 migrations/versions/*.pyc
 
-# ============================================
 # Claude Code
-# ============================================
-
 .claude/
 
-# ============================================
 # 系统文件
-# ============================================
-
 .DS_Store
 .DS_Store?
 ._*
@@ -225,7 +138,4 @@ $RECYCLE.BIN/
 *.swo
 *~
 .tmp/
-
-# 日志
-*.log
 logs/
