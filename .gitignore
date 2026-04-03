@@ -119,6 +119,7 @@ migrations/versions/*.pyc
 
 # Claude Code
 .claude/
+.ai/
 
 # 系统文件
 .DS_Store
